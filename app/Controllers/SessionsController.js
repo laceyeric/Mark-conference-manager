@@ -13,4 +13,14 @@ export default class SessionsController {
   constructor() {
     _drawSessions();
   }
+
+  addSpeaker(event, sId) {
+    event.preventDefault();
+    let formData = event.target;
+    let newSpeaker = {
+      name: formData.name.value,
+      topic: formData.topic.value,
+      time: formData.time.value
+    };
+  }
 }

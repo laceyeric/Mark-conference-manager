@@ -15,7 +15,7 @@ export default class Session {
       <dl class="ml-5">
       ${this.getSpeakerTemplates()}
       </dl>
-      <form>
+      <form onsubmit="app.sessionsController.addSpeaker(event, ${this.id})>
       <div class="form-group">
         <label for="name">Name</label>
         <input
