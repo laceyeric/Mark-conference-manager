@@ -15,6 +15,36 @@ export default class Session {
       <dl class="ml-5">
       ${this.getSpeakerTemplates()}
       </dl>
+      <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <input
+          type="text"
+          class="form-control"
+          id="topic"
+          placeholder="Enter topic"
+        />
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input
+          type="time"
+          class="form-control"
+          id="time"
+          placeholder="Enter time"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
     `;
   }
