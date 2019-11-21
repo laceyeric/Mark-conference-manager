@@ -1,9 +1,29 @@
 import Session from "./Models/Session.js";
+import Speaker from "./Models/Speaker.js";
 const STORAGEKEY = "CONFERENCE.STATE";
 
 let _state = {
   /** @type {Session[]} */
-  sessions: []
+  sessions: [
+    new Session({
+      id: "1",
+      name: "JavaScript",
+      speakers: [
+        new Speaker({
+          name: "Logan",
+          sessionId: "1",
+          topic: "objects",
+          time: "12:00"
+        }),
+        new Speaker({
+          name: "Mark",
+          sessionId: "1",
+          topic: "objects",
+          time: "11:00"
+        })
+      ]
+    })
+  ]
 };
 
 function _loadState() {

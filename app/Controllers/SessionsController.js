@@ -9,4 +9,8 @@ function _drawSessions() {
   });
   document.querySelector("#sessions").innerHTML = sessionsTemplate;
 }
-export default class SessionsController {}
+export default class SessionsController {
+  constructor() {
+    _drawSessions();
+  }
+}
