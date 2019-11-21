@@ -21,6 +21,8 @@ class Store {
   get State() {
     return _state;
   }
+
+  //run this after every state change
   saveState() {
     localStorage.setItem(STORAGEKEY, JSON.stringify(_state));
   }

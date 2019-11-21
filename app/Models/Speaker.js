@@ -8,4 +8,10 @@ export default class Speaker {
     this.topic = topic;
     this.time = time;
   }
+  get Template() {
+    return `
+    <dt>${this.name}</dt>
+    <dd>${this.topic}</dd>
+    `;
+  }
 }
