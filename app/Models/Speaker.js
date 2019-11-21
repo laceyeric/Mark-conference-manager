@@ -12,6 +12,7 @@ export default class Speaker {
     return `
     <dt>${this.name}</dt>
     <dd>${this.topic}</dd>
+    <button class="btn btn-outline btn-danger" onclick="app.sessionsController.removeSpeaker('${this.sessionId}','${this.id}')">X</button>
     `;
   }
 }

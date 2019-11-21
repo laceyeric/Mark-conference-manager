@@ -14,13 +14,22 @@ export default class SessionsController {
     _drawSessions();
   }
 
+  removeSpeaker(sessionId, speakerId) {
+    SessionsService.removeSpeaker(sessionId, speakerId);
+    _drawSessions();
+  }
+
   addSpeaker(event, sId) {
     event.preventDefault();
     let formData = event.target;
     let newSpeaker = {
       name: formData.name.value,
       topic: formData.topic.value,
-      time: formData.time.value
+      time: formData.time.value,
+      sessionId: sId
     };
+    SessionsService.addSpeaker(newSpeaker);
+    formData.reset();
+    _drawSessions();
   }
 }

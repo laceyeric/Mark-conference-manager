@@ -6,59 +6,18 @@ let _state = {
   /** @type {Session[]} */
   sessions: [
     new Session({
-      id: "1",
       name: "JavaScript",
-      speakers: [
-        new Speaker({
-          name: "Logan",
-          sessionId: "1",
-          topic: "objects",
-          time: "12:00"
-        }),
-        new Speaker({
-          name: "Mark",
-          sessionId: "1",
-          topic: "objects",
-          time: "11:00"
-        })
-      ]
+      speakers: []
     }),
     new Session({
-      id: "2",
       name: "CSS",
-      speakers: [
-        new Speaker({
-          name: "Wes",
-          sessionId: "2",
-          topic: "Flexbox",
-          time: "12:00"
-        }),
-        new Speaker({
-          name: "Eric",
-          sessionId: "2",
-          topic: "Bootstrap",
-          time: "11:00"
-        })
-      ]
+      speakers: []
     }),
     new Session({
-      id: "3",
       name: "HTML",
-      speakers: [
-        new Speaker({
-          name: "Madi",
-          sessionId: "3",
-          topic: "Div Tags",
-          time: "12:00"
-        }),
-        new Speaker({
-          name: "Jim",
-          sessionId: "3",
-          topic: "H Tags",
-          time: "11:00"
-        })
-      ]
+      speakers: []
     }),
+    //HARD CODED Nested children
     new Session({
       id: "4",
       name: "OOP",
