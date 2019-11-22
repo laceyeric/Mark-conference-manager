@@ -14,6 +14,11 @@ export default class SessionsController {
     _drawSessions();
   }
 
+  addSession() {
+    console.log("Button speaks to Controller");
+    SessionsService.addSession();
+  }
+
   removeSpeaker(sessionId, speakerId) {
     SessionsService.removeSpeaker(sessionId, speakerId);
     _drawSessions();
